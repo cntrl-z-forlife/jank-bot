@@ -1,4 +1,4 @@
-# chess-bot
+# jank-bot
 
 This uses code from a chess-engine tutorial to make a chess-engine with minimax evaluation with alpha-beta pruning. 
 See https://andreasstckl.medium.com/writing-a-chess-program-in-one-day-30daff4610ec
