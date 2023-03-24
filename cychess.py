@@ -39,7 +39,9 @@ def control(dpth):
     print("guess what, you get to be white. How nice. Definitely isn't just a lazy programmer.")
     while (1>0):
         if (Cturn):
+            startTime = time.time()
             mov = selectmove(dpth, board, movehistory, book)
+            print(time.time() - startTime, " seconds")
             board.push(mov)
             Pturn = 1
             print('The Black Computer chose:', mov)
@@ -55,7 +57,9 @@ def control(dpth):
                     print(game)
                     quit()
                 if (Pmove == "c"):
+                    startTime = time.time()
                     mov = selectmove(dpth, board, movehistory, book)
+                    print(time.time() - startTime, " seconds")
                     board.push(mov)
                     Cturn = 1
                     print('The White Computer chose:', mov)
